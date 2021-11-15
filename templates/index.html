@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Machine Learning Regression Model</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body>
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>Boston House Price Predictor</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="{{ url_for('home')}}", method="POST">
+					<input class="text" type="text" name="1" placeholder="CRIM (eg. 0.02)" required="">
+					<input class="text email" type="text" name="2" placeholder="ZN (range: 0-100; float)" required="">
+					<input class="text" type="text" name="3" placeholder="INDUS (eg. 14.04)" required="">
+					<input class="text w3lpass" type="text" name="4" placeholder="CHAS (0 or 1)" required="">
+          <input class="text w3lpass" type="text" name="5" placeholder="NOX (range: 0-1)" required="">
+          <input class="text w3lpass" type="text" name="6" placeholder="RM (range: 3-8; float)" required="">
+          <input class="text w3lpass" type="text" name="7" placeholder="AGE (range: 2-100; float)" required="">
+					
+            <input class="text" type="text" name="8" placeholder="DIS (range 1-12; float)" required="">
+					<input class="text email" type="text" name="9" placeholder="RAD (range: 1-12; Int)" required="">
+					<input class="text" type="text" name="10" placeholder="TAX (range: 200-600; Int)" required="">
+					<input class="text w3lpass" type="text" name="11" placeholder="PTRATIO (range 12-22; float)" required="">
+          <input class="text w3lpass" type="text" name="12" placeholder="B (range: 0-400; float)" required="">
+          <input class="text w3lpass" type="text" name="13" placeholder="LSTAT (range: 1-40; float)" required="">
+						</label>
+						<div class="clear"> </div>
+					
+					<input type="submit" value="PREDICT">
+				</form>
+			<br>
+			<br>
+			{{ prediction_text }}
+
+			</div>
+		</div>
+		<!-- copyright -->
+		<div class="colorlibcopy-agile">
+			<p>Made by Sarvesh Singh.</p>
+		</div>
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+</body>
+</html>
